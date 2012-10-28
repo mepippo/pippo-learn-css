@@ -1,0 +1,95 @@
+body *{
+	display: block;
+	width:500px;	
+	color:#000;
+	background-color: #EEE;
+	margin-bottom: 10px;
+}
+
+div:before{	
+	content: 'div';
+}
+
+#label:before{
+	content: '#label';
+}
+var.var:before{
+	content: 'var.var';
+}
+a[title]:before{
+	content: 'a[title]';
+}
+button[id="button"]:before{
+	content: 'button[id="button"]';
+}
+span:before{
+	content:'span:before';
+}
+/* css3,from IE7 start */
+span[name^="span"]:before{
+	content:'span[name^="span"]';
+}
+span[name$="span"]:before{
+	content:'span[name$="span"]';
+}
+span[name*="spans"]:before{
+	content:'span[name*="spans"]';
+}
+span[name~="span"]:before{
+	content:'span[name~="span"]';
+}
+span[name|="ssspan"]:before{
+	content:'span[name|="ssspan"]';
+}
+span[name|="ssppaann"]:before{
+	content:'span[name|="ssppaann"]';
+}
+/* css3,from IE7 end */
+
+div i:before{
+	content:'div i:before';
+}
+
+div > i:before{
+	content:'div > i:before';
+}
+
+div > span:before{
+	content: 'div > span:before';
+}
+
+div i + strong:before{
+	content:'div i + strong';
+}
+
+a.link:link:after{
+	content:'link';
+}
+
+a.link:visited:after{
+	content:'visited';
+}
+
+a.link:focus:after{
+	content:'focus';
+}
+
+a.link:hover:after{
+	content:'hover';
+}
+
+a.link:active:after{
+	content:'active';
+}
+
+li:first-child:before{
+	content:'li:first-child';
+}
+
+li:first-letter{
+	color:red;
+}
+
+pre:first-line{
+	color:green;
+}
